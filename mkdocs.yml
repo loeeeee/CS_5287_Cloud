@@ -1,0 +1,131 @@
+site_name: CS 5287 - Cloud Computing
+site_description: Vanderbilt University Cloud Computing Course Materials
+site_author: Dr. Darren Pulsipher
+site_url: https://your-domain.com/cs5287
+
+repo_name: CS5287-Cloud
+repo_url: https://github.com/your-username/CS5287-Cloud
+edit_uri: edit/main/doc/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+    - navigation.tracking
+    - navigation.footer
+  logo: assets/images/vanderbilt-logo.png
+  favicon: assets/images/favicon.ico
+
+plugins:
+  - search:
+      lang: en
+  - awesome-pages:
+      filename: .pages
+      collapse_single_pages: true
+  - pdf-export:
+      verbose: true
+      media_type: print
+      enabled_if_env: ENABLE_PDF_EXPORT
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: ['docs']
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - def_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+      title: On this page
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-username/CS5287-Cloud
+      name: Course Repository
+    - icon: fontawesome/solid/envelope
+      link: mailto:darren.pulsipher@vanderbilt.edu
+      name: Contact Instructor
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+
+extra_css:
+  - assets/css/custom.css
+
+extra_javascript:
+  - assets/js/custom.js
+
+nav:
+  - Home: index.md
+  - Course Information:
+    - Syllabus: syllabus.md
+    - Schedule: schedule.md
+  - Assignments:
+    - Overview: assignments/index.md
+    - CA0 - Manual Deployment: assignments/ca0.md
+    - CA1 - Infrastructure as Code: assignments/ca1.md
+    - CA2 - PaaS Orchestration: assignments/ca2.md
+    - CA3 - Cloud-Native Ops: assignments/ca3.md
+    - CA4 - Multi-Hybrid Cloud: assignments/ca4.md
+  - Weekly Content:
+    - Week 1 - Cloud Computing Fundamentals: weeks/week-01/index.md
+    - Week 2 - Systems & Networking: weeks/week-02/index.md
+    - Week 3 - Virtualization & IaC: weeks/week-03/index.md
+    - Week 4 - Containers: weeks/week-04/index.md
+    - Week 5 - Kubernetes & Networking: weeks/week-05/index.md
+    - Week 6 - Scaling & Scheduling: weeks/week-06/index.md
+    - Week 7 - Tail Latencies: weeks/week-07/index.md
+    - Week 8 - Reliability & Chaos Engineering: weeks/week-08/index.md
+    - Week 9 - Serverless & Edge: weeks/week-09/index.md
+    - Week 10 - Cloud Storage: weeks/week-10/index.md
+    - Week 11 - Data Processing: weeks/week-11/index.md
+    - Week 12 - AI in the Cloud: weeks/week-12/index.md
+    - Week 13 - Networking Innovations: weeks/week-13/index.md
+    - Week 14 - Final Projects: weeks/week-14/index.md
+    - Week 15 - Presentations: weeks/week-15/index.md
+    - Week 16 - Wrap-up: weeks/week-16/index.md
+
+copyright: |
+  &copy; 2025 <a href="https://www.vanderbilt.edu/" target="_blank" rel="noopener">Vanderbilt University</a> - 
+  <a href="mailto:darren.pulsipher@vanderbilt.edu">Dr. Darren Pulsipher</a>

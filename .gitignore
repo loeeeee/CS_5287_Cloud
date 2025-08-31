@@ -1,30 +1,39 @@
-### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+# Python virtual environment
+venv/
+env/
+.venv/
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+# Generated site output
+site/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
 
-### VS Code ###
+# IDE files
 .vscode/
+.idea/
+*.swp
+*.swo
 
-### Mac OS ###
+# OS files
 .DS_Store
-/.output/
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+
+# Build artifacts
+*.log
+*.pid
+
+# MkDocs
+.mkdocs_cache/
+
+# PlantUML cache
+*.plantuml
